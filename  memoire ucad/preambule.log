@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=latex 2015.11.10)  25 DEC 2015 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=latex 2015.11.10)  26 DEC 2015 23:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,13 +700,26 @@ LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <6> not available
 Chapitre 1.
 [2
 
-] [3] [4]
+] [3]
+Overfull \hbox (3.64857pt too wide) in paragraph at lines 554--558
+\T1/cmr/m/n/10.95 construire un arbre per-met-tant d'énu-me-rer toutes les so-l
+u-tions. L'en-semble des noeuds
+ []
+
+[4]
+File: fig1.ps Graphic file (type eps)
+ <fig1.ps>
+Overfull \hbox (12.12862pt too wide) in paragraph at lines 601--602
+ [][] 
+ []
+
+[5]
 Chapitre 2.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 559.
+(hyperref)                than one, level fixed on input line 631.
 
-[5
+[6
 
 ]
 Chapitre 3.
@@ -717,14 +730,14 @@ Chapitre 3.
 (./preambule.mtc8)
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 579.
+(hyperref)                than one, level fixed on input line 651.
 
-[6
+[7
 
-] [7
+] [8
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 630.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 703.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -740,25 +753,25 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the preambule.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 644.
-[8
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 730.
+[9
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 644.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 730.
  (./preambule.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 644.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 644.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 730.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 730.
 Package rerunfilecheck Info: File `preambule.out' has not changed.
 (rerunfilecheck)             Checksum: B06EA83B61FF076221B8273CD19DD895;2175.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 644.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 730.
  ) 
 Here is how much of TeX's memory you used:
- 11242 strings out of 494951
- 154214 string characters out of 6179065
+ 11249 strings out of 494951
+ 154264 string characters out of 6179065
  300486 words of memory out of 5000000
- 14026 multiletter control sequences out of 15000+600000
+ 14032 multiletter control sequences out of 15000+600000
  29535 words of font info for 84 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 36i,15n,45p,226b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,45p,226b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on preambule.dvi (15 pages, 56812 bytes).
+Output written on preambule.dvi (16 pages, 67040 bytes).

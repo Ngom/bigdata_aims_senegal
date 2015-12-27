@@ -313,8 +313,8 @@ Cinq\or Six\or Sept \or Huit\or Neuf\or Dix\or Onze\fi}
 
 \begin{titlepage}
 \begin{center}
-\includegraphics[height=2cm,width=2cm]{UcadLogo} \qquad 
-{\bf Universit\'e Cheikh Anta Diop de Dakar (UCAD)} \qquad
+\includegraphics[height=2cm,width=2cm]{UcadLogo} \\ 
+{\bf Universit\'e Cheikh Anta Diop de Dakar (UCAD)} \\
 \includegraphics[height=2cm,width=2cm]{logo}
 
 \vspace{0.2cm}
@@ -421,8 +421,8 @@ generalement des
  Les m\'etaheuristiques acqui\`erent une grande avantage par leur capacit\'e d'\'eviter les minima locaux en admettant des d\'egradations de la fonction objectve au
  cours de la progression.\\
  Grace \`a l'optimisation lineaire en nombres entiers, la discipline occupe une place capitale en mathematique d\'ecisionnaire, en recherche opreationnelle et en informatique.
- Des nombreuses applications peuvent \^etre mod\'elis\'ees sous la formes de problemes d'optimisation en nombres entiers telles que le voyageur de commerce, le probl\`eme
- de coloration de graphe, lee proble\`emes de localisation etc.
+ Des nombreuses applications peuvent \^etre mod\'elis\'ees sous la forme de probl\`eme d'optimisation en nombres entiers telles que le voyageur de commerce, le probl\`eme
+ de coloration de graphe, les proble\`emes de localisation etc.
  En g\'en\'eral, on appelle programmation math\'ematique la recherche de l'optimum d'une fonction de plusieurs variables li\'ees entre elles
   par des contraintes (sous formes'\'egalit\'e ou d'in\'egalit\'e). En particulier voici la forme standard d'une programmation lin\'eaire:
  $$
@@ -514,7 +514,7 @@ Nous allons passer \`a la description des principales m\'ethodes de r\'esolution
  solution optimale pour une instance de taille finie dans un temps limit\'e et de prouver son optimalit\'e [\ref{Schrijver}].
 \subsection{La m\'ethode du Simplexe}
  Parmi ces m\'ethodes, on peut remarquer l'algorihme du simplexe qui permet d'obtenir la solution optimale d'un probl\'eme d'optimisation en parcourant la 
- fermeture convexe de l'ensemble de recherche.Son avantage c'est qu'il permet de r\'esoudre un grand nombre de probl\`emes rapidement.\\\vspace{0.4cm}
+ fermeture convexe de l'ensemble de recherche. Son avantage c'est qu'il permet de r\'esoudre un grand nombre de probl\`emes rapidement.\\\vspace{0.4cm}
  Voici la d\'efinition donn\'ee par {\bf Wikip\'edia, (consult\'e le 25/12/2015)}:\\
  ``{\it L'algorithme du simplexe est un algorithme de r\'esolution des probl\`emes d'optimisation lin\'eaire. Il a \'et\'e introduit par George Dantzig
  \`a partir de 1947. C'est probablement le premier algorithme permettant de minimiser une fonction sur un ensemble d\'efini par des in\'egalit\'es. 
@@ -525,13 +525,85 @@ De ce fait, il a beaucoup contribu\'e au d\'emarrage de l'optimisation num\'eriq
  
                                                                                   
  Cependant, l'algorihme du simplexe qui est bien entendu valable pour tout probl\`eme, il n'est n\'ecessairement le plus efficace pour traiter des
- probl\`emes dont l'ensemble des contraintes pr\'esente certaines particularit\'es.
-
+ probl\`emes dont l'ensemble des contraintes pr\'esente certaines particularit\'es (comme l'int\'egrit\'e de la solution).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{La M\'ethode de S\'eparation et d'Evauation}
+ L'algorihme de s\'eparation et d'\'evaluation, connu sous l'appellation anglaise {\bf Branch and Bound (B\&B)}, est l'une des methodes les plus
+ connues pour r\'esolution de probl\`emes d'optimisation combinatoires NP-Complets comme {\bf le probl\`eme de sac \`a dos}\footnote{Knapsack Problem 
+  (KP)ou probl\`eme de sac \`a dos est un probl\`eme simple et classique d'optimisation combinatoire appartenant \`a la classe NP-Complet.}.
+ Elle repose sur une m\'ethode arborescente de recherche d'une solution optimale par s\'eparations et \'evaluations, repr\'esentant les \'etats 
+ solutions par un arbre d'\'etats, avec des noeuds, et des feuilles.\\
+  Le branch and bound est bas\'e sur tois axes principaux:
+  \begin{description}
+   \item[--] {\bf l'\'evaluation},
+   \item[--] {\bf la s\'eparation},
+   \item[--] {\bf la strat\'egie de parcours}.
+  \end{description}
+ {\bf -- L'\'evalution}:
+  \begin{description}
+  \item l'\'evaluation permet de rediure l'espace en \'eliminant quelques sous ensembles qui ne contiennent pas la solution optimale. L'objectif est d'essayer
+   d'\'evaluer l'int\'er\^et de l'exploration d'un sous ensemble de l'arborescence. Le branch and bround utilise une \'elimination de branches dans l'
+   arborescence de recherche de la mani\`ere suivante: la recherche d'une solution de co\^ut minimal, consiste \`a m\'emoriser la solution la moins
+   co\^uteuse rencontr\'ee pendant l'exploration, et \`a comparer le co\^ut de chaque noeud parcouru \`a celui de la meilleure solution. Si le co\^ut du
+   noeud consid\'er\'e est sup\'ereiur au meilleur co\^ut, on arr\^et l'exploration de la branche et toutes les solutions de cette branche seront 
+   n\'ecssairement de cou\^ut plus \'elev\'e que la solution d\'eja trouc\'ee. 
+  \end{description}
+ {\bf La s\'eparation}:
+ \begin{description}
+ \item la s\'eparation consiste \`a diviser le probl\`eme en sous probl\`emes et en gardant la meilleure solution trouv\'ee, on est assur\'e d'avoir r\'esolu
+  le probl\`eme inintial. cela revient \`a construire un arbre permettant d'\'enumerer toutes les solutions. L'ensemble des noeuds de l'arbre qu'il reste
+  encore parcourir comme \'etant susceptibles de contenir une solution optimale, c'esr-\`a-dire encore \`a divser, est appel\'e ensemble des noeuds actifs.\\
+  La proc\'edure de s\'eparation s'arr\^ete losrqu'une des conditions suivantes est v\'erif\'ee:
+  \begin{description}
+   \item[--] on recoonait la meilleure solution de l'ensemble,
+   \item[--] on reconnait une solution meilleure que toutes celles de l'ensemble,
+   \item[--] on sait que l'ensemble ne cotient aucune soolution admissible.
+  \end{description}
+ \end{description}
+ {\bf La strat\'egie de parcours}:
+ \begin{description}
+  \item {\bf La largeur d'abord:} cette strat\'egie favorise les sommets les plus proches de la racine en faisant moins de s\'eparations du probl\`eme 
+  initial. Elle est moins efficace que les deux qui suivent, 
+  \item {\bf La profonduer d'adord:} cette strat\'egie avantage les sommets les plus \'eloign\'es de la racine ( de profondeur plus \'elev\'ee) en applicant
+   plus de s\'eparations au probl\`eme initial. Cette voie m\`ene rapidement \`a une solution optimale en \'economisant la m\'emoire,
+  \item {\bf La meilleur d'abord:} cette strat\'egie consiste \`a exploere les sous-probl\`emes poss\'edant la meilleure borne. Elle permet aussi d'\'eviter l'exploration
+   de tous les sous-probl\`emes qui poss\`edent une mauvaise \'evaluation par rapport \`a la valeur optimale. Elle dirige \'egalement la recherche l\`a o\`u
+    la probabilit\'e de trouver une meilleure solution est plus forte.
+ \end{description}
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%     SCHEMA ILLUSTRATIF DE LA METHODE
+{\bf Repr\'esentation graphique de la d\'ecomposition par B\&B appliqu\'ee au KP}\\
+Formulation math\'ematique du KP: Dans ce cas, nous avons un sac \`a dos de maximal $P$ et $n$ oobjets. Pour chaque objet $i$, nous avons le poids $p_i$
+ et une valeur ou utilit\'e $c_i$.\\
+ variables de d\'ecision:
+ $$
+   x_i = \left \{ \begin{array}{l}
+           1 \,\, \textnormal{si l'objet i est mis dans le sac,}\\
+           0 \,\, \textnormal{si l'objet i n'es pas mis dans le sac.}
+          \end{array}
+          \right.
+ $$
+ On obtient mod\'ele suivant:
+ $$
+  (KP) \left \{\begin{array}{l}
+          \max \sum_{i=1}^n c_i x_i \\
+          s.c                        \\
+          \sum_{i=1}^n p_i x_i \leq P \\
+          x_i \in \{ 0, 1 \}
+         \end{array}\right.
+ $$
+ La recherche par d\'ecomposition de l'ensemble des solutions peut \^etre repr\'esent\'ee graphiquement par un arbre (voir figure \ref{fig1}).\\
+ C'est de cette repr\'esentation que vient vient le nom de ``m\'ethode de recherche arborescente''.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{figure}[h!]
+  \begin{center}
+  \includegraphics[scale=0.6]{fig1}
+  \caption{\label{fig1} Arbre engendr\'e par d\'ecomposition d'un probl\`eme}
+  \end{center}
+  \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Methode des coupes de Gomory}
 
 
@@ -602,7 +674,8 @@ De ce fait, il a beaucoup contribu\'e au d\'emarrage de l'optimisation num\'eriq
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibitem{acherga}
 Acher J. ; Gadelle J : 
-\emph{Programmation Lin\'eare.} Dunod D\'ecision, Bordas, Paris, 1978, Troisi\`eme \'edition .
+\emph{Programmation Lin\'eare.} 
+Dunod D\'ecision, Bordas, Paris, 1978, Troisi\`eme \'edition .
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibitem{cea}
 C\'ea J. : 
@@ -630,14 +703,27 @@ coursC2SI.pdf \\
 \url{http://www.fsr.ac.ma/cours/maths/bernoussi/Cours\%20C2SI.pdf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibitem{ria}
-Revue d'Intelligence Artificielle,\\
+Revue d'Intelligence Artificielle, Vol: No.1999,\\
 \url{http://www.info.univ-angers.fr/pub/hao/papers/RIA.pdf}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibitem{Schrijver}
 Schrijver A. \label{Schrijver}
 \emph{Theory of linear and integer programming.}
 Wiley and Sons, 1986, (Cit\'e page 6.)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{these}
+conception des m\'etaheuristiques d'optimisation,\\
+\url{https://tel.archives-ouvertes.fr/tel-01143778/document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{alami}
+THESE de ALAMI,\\
+\url{http://homepages.laas.fr/elbaz/These_LALAMI.pdf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{kp}
+Interstices.info: Le probl\`eme de sac \`a dos,\\
+\url{https://interstices.info/jcms/c_19213/le-probleme-du-sac-a-dos }
+
+
 
 \end{thebibliography}
 
