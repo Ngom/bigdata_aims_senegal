@@ -1,0 +1,64 @@
+Jeudi 3 dec 2015, geginig (first week)
+# comment utiliser mon compte git
+la commande "fork" copie le fichier dans mon compte ou space
+copier à partir de Guit: guit clone + addresse git du ficher sur le terminal
+git add * + nom du ficher
+git commit -m "message"
+git push
+git config -l
+git config --global user.name "Ngom"
+git config --global user.email "elhadji.ngom@aims-senegal.org"
+git commit -m "premiier ajout a git"
+
+create ~/bashrc (specific on linux for security).
+
+# API 
+API permet de recuperer des donnees sur internet.
+# GIT
+GIT nous permet de sauvegarder des donnees, codes et fichers sans limite sur internet avec securite.
+# BIG DATA in 3 words:
+    Volume
+    Velocity
+    Variety
+format: json, csv
+
+1) How APIs work ?
+2) How to downlod data using twitter API ?
+3) The process of downloding twitter data does work ?
+
+# lundi 7 dec 2015 (2nd week)
+>>>> MACHINE LEANING
+a) FEATURE:  'un attribiut ou fonctionnalité' un tirage dans le jeu week end.
+concours de beaute de keynes pour comprendre 'feature'.
+b) DIMENSION REDUCTION: 
+the number of sample, reduce the dimension help computer in leaning. we will make sure that we don't lose some information.
+c)  DATA CLEANING: netoyer ou tier
+D)  TRAIN THE MACHINE: entrainements
+e)  TEST: faire des tester ses data
+Exemple Use UN.csv data (Data United Nations organisation) pour tester les points a, b, c , d et e
+dim=14
+reduce to 2: GDP and country
+clean the empty countyies
+class the country africa(1) europe(2) and asia(3) classes
+test apres entrainment.
+>>>>>>Can see here the 5 steps of machine leaning.
+# mardi 08 dec 2015
+###### sudo easy_install pip
+
+Mc
+achine learnig: synchronize my Desktop and git file
+ type: git remote -v and git remote add * upstream https://github.com/fyabebalFantaye/bigdata_aims_senegal.git and git fetch upstream to
+obtain the news directly on my laptop, and git checkout master at we type git merge upstream/master.
+Ajouter dans vos CV dans vos competences: Git et API
+###vendredi  december 2015
+ces permettent de faire update des codes nouveaux
+git status
+git aad * 
+guit commit -m 'ading update'
+get push origin master
+At the end can type again: git status
+add this just after please
+git remote -v
+
+sudo easy_install pip ipython['all']
+
