@@ -147,6 +147,10 @@ Cinq\or Six\or Sept \or Huit\or Neuf\or Dix\or Onze\fi}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
+%%%%%%%%%%%%%%%%%%%%%%%   mes packages:
+\usepackage{frcursive}
+\usepackage{pifont}
+
 %avant il y avait ca
  \usepackage[dvips]{epsfig}
 %jusqu ici
@@ -516,11 +520,11 @@ Nous allons passer \`a la description des principales m\'ethodes de r\'esolution
  Parmi ces m\'ethodes, on peut remarquer l'algorihme du simplexe qui permet d'obtenir la solution optimale d'un probl\'eme d'optimisation en parcourant la 
  fermeture convexe de l'ensemble de recherche. Son avantage c'est qu'il permet de r\'esoudre un grand nombre de probl\`emes rapidement.\\\vspace{0.4cm}
  Voici la d\'efinition donn\'ee par {\bf Wikip\'edia, (consult\'e le 25/12/2015)}:\\
- ``{\it L'algorithme du simplexe est un algorithme de r\'esolution des probl\`emes d'optimisation lin\'eaire. Il a \'et\'e introduit par George Dantzig
+   ``{\it L'algorithme du simplexe est un algorithme de r\'esolution des probl\`emes d'optimisation lin\'eaire. Il a \'et\'e introduit par George Dantzig
  \`a partir de 1947. C'est probablement le premier algorithme permettant de minimiser une fonction sur un ensemble d\'efini par des in\'egalit\'es. 
 De ce fait, il a beaucoup contribu\'e au d\'emarrage de l'optimisation num\'erique. L'algorithme du simplexe a longtemps \'et\'e la m\'ethode la plus utilis\'ee
  pour r\'esoudre les probl\'emes d'optimisation lin\'eaire. Depuis les ann\'ees 1985-90, il est concurrenc\'e par les m\'ethodes de points int\'erieurs, mais garde 
- une place de choix dans certaines circonstances (en particulier si l'on a une id\'ee des contraintes d'in\'egalit\'e actives en la solution)}''
+ une place de choix dans certaines circonstances (en particulier si l'on a une id\'ee des contraintes d'in\'egalit\'e actives en la solution)}''.
  \vspace{0.4cm}
  
                                                                                   
@@ -536,11 +540,11 @@ De ce fait, il a beaucoup contribu\'e au d\'emarrage de l'optimisation num\'eriq
  solutions par un arbre d'\'etats, avec des noeuds, et des feuilles.\\
   Le branch and bound est bas\'e sur tois axes principaux:
   \begin{description}
-   \item[--] {\bf l'\'evaluation},
-   \item[--] {\bf la s\'eparation},
-   \item[--] {\bf la strat\'egie de parcours}.
+   \item[\ding{46}] {\bf l'\'evaluation},
+   \item[\ding{46}] {\bf la s\'eparation},
+   \item[\ding{46}] {\bf la strat\'egie de parcours}.
   \end{description}
- {\bf -- L'\'evalution}:
+ \ding{43} {\bf L'\'evalution}:
   \begin{description}
   \item l'\'evaluation permet de rediure l'espace en \'eliminant quelques sous ensembles qui ne contiennent pas la solution optimale. L'objectif est d'essayer
    d'\'evaluer l'int\'er\^et de l'exploration d'un sous ensemble de l'arborescence. Le branch and bround utilise une \'elimination de branches dans l'
@@ -549,32 +553,34 @@ De ce fait, il a beaucoup contribu\'e au d\'emarrage de l'optimisation num\'eriq
    noeud consid\'er\'e est sup\'ereiur au meilleur co\^ut, on arr\^et l'exploration de la branche et toutes les solutions de cette branche seront 
    n\'ecssairement de cou\^ut plus \'elev\'e que la solution d\'eja trouc\'ee. 
   \end{description}
- {\bf La s\'eparation}:
+ \ding{43} {\bf La s\'eparation}:
  \begin{description}
  \item la s\'eparation consiste \`a diviser le probl\`eme en sous probl\`emes et en gardant la meilleure solution trouv\'ee, on est assur\'e d'avoir r\'esolu
   le probl\`eme inintial. cela revient \`a construire un arbre permettant d'\'enumerer toutes les solutions. L'ensemble des noeuds de l'arbre qu'il reste
   encore parcourir comme \'etant susceptibles de contenir une solution optimale, c'esr-\`a-dire encore \`a divser, est appel\'e ensemble des noeuds actifs.\\
   La proc\'edure de s\'eparation s'arr\^ete losrqu'une des conditions suivantes est v\'erif\'ee:
   \begin{description}
-   \item[--] on recoonait la meilleure solution de l'ensemble,
-   \item[--] on reconnait une solution meilleure que toutes celles de l'ensemble,
-   \item[--] on sait que l'ensemble ne cotient aucune soolution admissible.
+   \item[\ding{51}] on recoonait la meilleure solution de l'ensemble,
+   \item[\ding{51}] on reconnait une solution meilleure que toutes celles de l'ensemble,
+   \item[\ding{51}] on sait que l'ensemble ne cotient aucune soolution admissible.
   \end{description}
  \end{description}
- {\bf La strat\'egie de parcours}:
+ \ding{43} {\bf La strat\'egie de parcours}:
  \begin{description}
-  \item {\bf La largeur d'abord:} cette strat\'egie favorise les sommets les plus proches de la racine en faisant moins de s\'eparations du probl\`eme 
+  \item[\ding{247}] {\bf La largeur d'abord:} cette strat\'egie favorise les sommets les plus proches de la racine en faisant moins de s\'eparations du probl\`eme 
   initial. Elle est moins efficace que les deux qui suivent, 
-  \item {\bf La profonduer d'adord:} cette strat\'egie avantage les sommets les plus \'eloign\'es de la racine ( de profondeur plus \'elev\'ee) en applicant
+  \item[\ding{247}] {\bf La profonduer d'adord:} cette strat\'egie avantage les sommets les plus \'eloign\'es de la racine ( de profondeur plus \'elev\'ee) en applicant
    plus de s\'eparations au probl\`eme initial. Cette voie m\`ene rapidement \`a une solution optimale en \'economisant la m\'emoire,
-  \item {\bf La meilleur d'abord:} cette strat\'egie consiste \`a exploere les sous-probl\`emes poss\'edant la meilleure borne. Elle permet aussi d'\'eviter l'exploration
+  \item[\ding{247}] {\bf La meilleur d'abord:} cette strat\'egie consiste \`a exploere les sous-probl\`emes poss\'edant la meilleure borne. Elle permet aussi d'\'eviter l'exploration
    de tous les sous-probl\`emes qui poss\`edent une mauvaise \'evaluation par rapport \`a la valeur optimale. Elle dirige \'egalement la recherche l\`a o\`u
     la probabilit\'e de trouver une meilleure solution est plus forte.
  \end{description}
 
 %%%%%%%%%%%%%%%     SCHEMA ILLUSTRATIF DE LA METHODE
-{\bf Repr\'esentation graphique de la d\'ecomposition par B\&B appliqu\'ee au KP}\\
-Formulation math\'ematique du KP: Dans ce cas, nous avons un sac \`a dos de maximal $P$ et $n$ oobjets. Pour chaque objet $i$, nous avons le poids $p_i$
+ \begin{cursive} 
+  {\bf Repr\'esentation graphique de la d\'ecomposition par B\&B appliqu\'ee au KP:}
+ \end{cursive}
+\underline{\bfseries Formulation math\'ematique du KP:} Dans ce cas, nous avons un sac \`a dos de maximal $P$ et $n$ oobjets. Pour chaque objet $i$, nous avons le poids $p_i$
  et une valeur ou utilit\'e $c_i$.\\
  variables de d\'ecision:
  $$
@@ -585,15 +591,15 @@ Formulation math\'ematique du KP: Dans ce cas, nous avons un sac \`a dos de maxi
           \right.
  $$
  On obtient mod\'ele suivant:
- $$
+ \[
   (KP) \left \{\begin{array}{l}
-          \max \sum_{i=1}^n c_i x_i \\
+          \max \displaystyle\sum_{i=1}^n c_i x_i \\
           s.c                        \\
-          \sum_{i=1}^n p_i x_i \leq P \\
+          \displaystyle\sum_{i=1}^n p_i x_i \leq P \\
           x_i \in \{ 0, 1 \}
          \end{array}\right.
- $$
- La recherche par d\'ecomposition de l'ensemble des solutions peut \^etre repr\'esent\'ee graphiquement par un arbre (voir fig. no: \ref{fig1}).\\
+ \]
+ La recherche par d\'ecomposition de l'ensemble des solutions peut \^etre repr\'esent\'ee graphiquement par un arbre (voir figure \ref{fig1}).\\
  C'est de cette repr\'esentation que vient vient le nom de ``m\'ethode de recherche arborescente''.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{figure}[h!]
@@ -604,7 +610,29 @@ Formulation math\'ematique du KP: Dans ce cas, nous avons un sac \`a dos de maxi
   \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Methode des coupes de Gomory}
+\subsection{Methode des coupes planes ou cutting planes m\'ethod}
+L\'ethode des coupes \`a \'et\'e d\'evelopp\'ee par A. Schrijver dans son livre intitul\'e {\ Theory of linear and integer programming} en 1986 mais 
+les travaux Ralph Edward Gomory ont rendu les cpues plus connues et plus efficaces. Elle est destin\'ee \`a r\'esoudre des probl\`emes d'optimisation
+lin\'eaires en nombres entiers qui se formulent sous la forme standard d'un progrmamme lin\'eaire $(PL)$:\\
+\begin{equation}
+    (PL)  \left\{\begin{array}{l}
+               \min C^T x  \\
+               s.c.         \\
+               Ax \geq b     \\
+               x\in \mathbb{R}^n
+              \end{array}
+      \right.
+\end{equation}
+L'algorithme de cutting-plane forme une des classes des Algorithmes pour r\'esoudre des PLE's qui utilise une id\'ee sophistiqu\'ee tr\'es
+int\'eressante. A chaque \'etape, on diminue la r\'egion r\'ealisable en utilisant un plan coupant (cutting plane) jusqu'\`a ce que la solution 
+optimale du PL (relxation du PLE) soit enti\`ere correspondant la solution optimale du PLE inital.
+{\bf Id\'ee de base: }\\
+On ajoute des contraintes lin\'eaires au $PLE$ qui n'excluent pas la solution enti\`ere r\'ealisable.
+{\bf Strat\'egie:}\\
+\primo On ajoute des contraintes lin\'eaires au $PLE$ et donc auussi \`a la relaxation, une \`a chaque \'etape, jusqu'\`a la soluton optimale 
+enti\`ere de la relaxation.
+\scoundo  
+
 
 
 
@@ -698,6 +726,11 @@ Maurras Jean F. :
 \emph{Programmation lin\'eaire, Complexit\'e: S\'eparation et Optimisation.}
 Spinger-Verlag Berlin, Heidelberg, 2002
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{Schrijver}
+Schrijver A. \label{Schrijver}
+\emph{Theory of linear and integer programming.}
+Wiley and Sons, 1986, (Cit\'e page 6.)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibitem{coursc2si}
 coursC2SI.pdf \\
 \url{http://www.fsr.ac.ma/cours/maths/bernoussi/Cours\%20C2SI.pdf}
@@ -706,13 +739,8 @@ coursC2SI.pdf \\
 Revue d'Intelligence Artificielle, Vol: No.1999,\\
 \url{http://www.info.univ-angers.fr/pub/hao/papers/RIA.pdf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\bibitem{Schrijver}
-Schrijver A. \label{Schrijver}
-\emph{Theory of linear and integer programming.}
-Wiley and Sons, 1986, (Cit\'e page 6.)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibitem{these}
-conception des m\'etaheuristiques d'optimisation,\\
+Th\`ese: conception des m\'etaheuristiques d'optimisation,\\
 \url{https://tel.archives-ouvertes.fr/tel-01143778/document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibitem{alami}
@@ -722,8 +750,21 @@ THESE de ALAMI,\\
 \bibitem{kp}
 Interstices.info: Le probl\`eme de sac \`a dos,\\
 \url{https://interstices.info/jcms/c_19213/le-probleme-du-sac-a-dos }
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{gomory}
+Algorithme de cutting plane Coupe de Gomory - LITA\\
+\url{http://www.lita.univ-lorraine.fr/~kratsch/teaching/ro10.ps}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{cutting}
+Integer programming: cutting planes, (\`a partir de la page 301).\\
+\url{http://http://web.mit.edu/15.053/www/AMP-Chapter-09.pdf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{repere}
+REPERE2011,\\
+\emph{Ressources El\'ectroniques Pour les Etudiants, la Recherche et l'Enseignemen.}\\
+Paris, \`a jour le 01/06/2011, disponible sur:\\
+\url{http://repere.enssib.fr}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{thebibliography}
 
