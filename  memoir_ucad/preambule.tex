@@ -761,7 +761,7 @@ On passe \`a la r\'esolution du $PL$ par le Cplex puis on ontient le r\'esultat 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \begin{figure}[]
   \begin{center}
-  \includegraphics[height=12cm,width=16cm]{tp2}
+  \includegraphics[height=8cm,width=15cm]{tp2}
   \caption{\label{fig2} Details de r\'esolution et affichage du r\'esultat.}
   \end{center}
   \end{figure}
@@ -772,6 +772,29 @@ de r\'esolution par Colonies etc. A ce groupe s'ajoute les methodes heuristiques
 \end{remarque}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Les heuristiques}
+En Optimisation combinatoire, une {\bf heuristique} est un algorihme d'approximaton qui permet d'identifier en temps polynomial au moins une 
+une solution r\'ealisable rapide, mais obligatoirement optimale. L'usage d'une heuristique est efficace pour Calculer une solution approch\'ee
+ d'un probl\`eme et ainsi acc\'el\'erer le processus de r\'esolution \'exacte. G\'en\'eralement une heuristique est con\c{c}ue pour un probl\`eme
+ particulier en s'appuyant sur sa structure propre sans offrir aucune garantie quant \`a la qualit\'e de la solution Calcul\'ee. On distingue deux 
+ cat\'egories d'heuristiques:
+ \begin{description}
+  \item[\ding{247}] M\'ethodes constuctives qui g\'en\`erent des solutions \`a partir d'une solution initiale en essayant d'en ajouter petit \`a petit 
+  des \'el\'ements jusqu'\`a ce qu'une solution compl\`ete soit obtenue.
+  \item[\ding{247}] M\'ethodes de fouilles locales qui d\'emarrent avec solution initialement compl\`ete (probablement moins int\'eressante) et de mani\`ere 
+  r\'ep\'etitive essaient d'am\'eliorer cette solution en explorant son voisinage.
+ \end{description}
+\subsection*{La descente recursive (ou de recherche locale)}
+La m\'ethode de descente est l'une des heuristiques les lpus connues. C'est un exemple typique de recherche locale, elle progresse \`a travers l'ensemble 
+des solutions $X$ par le choix de la meilleure solution voisinage de la courante et ainsi de suite; ce processus s'interrompt d\'es que le premier minimum 
+local est atteint.\\
+Cette heuristique est caract\'eris\'ee par sa simplicit\'e mais pr\'esente deux inconv\'enients:
+\begin{description}
+ \item[\ding{245}] Suivant la taille et la structure du voisinage $N(s)$ consid\'er\'e, la recherche de la meilleure solution voisine qui peut \^etre 
+ aussi difficile que le probl\`eme initial.
+ \item[\ding{245}] Elle est incapable de progresser au del\`a du premier minimum local rencontr\'e. Par contre les probl\`emes d'optimisation combinatoires
+  comportent en g\'en\'erale plusieurs optima locaux pour lesquels la valeur de la fonction objectif peut \^etre fort \'eloign\'ee.
+\end{description}
+
 
 
 
@@ -899,6 +922,11 @@ REPERE2011,\\
 Paris, \`a jour le 01/06/2011, disponible sur:\\
 \url{http://repere.enssib.fr}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{memoire}
+Fouad Bekkari,
+\emph{[M\'emoire de Magist\`ere]: R\'esolution des probl\`emes difficiles par optimisation distribu\'ee}
+UNIVERSITE MOHAMED KHIDER BISKRA, Alg\'erie, 2008.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{thebibliography}
 
