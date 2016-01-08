@@ -148,7 +148,7 @@ Cinq\or Six\or Sept \or Huit\or Neuf\or Dix\or Onze\fi}
 \pagestyle{fancy}
 
 %%%%%%%%%%%%%%%%%%%%%%%   mes packages:
-\usepackage{frcursive}
+%\usepackage{frcursive}
 \usepackage{pifont}
 \usepackage{algorithmic}
 \usepackage{algorithm}
@@ -212,7 +212,7 @@ Cinq\or Six\or Sept \or Huit\or Neuf\or Dix\or Onze\fi}
 
 %\fancyfoot[LE, RO]{\tiny \textbf{Bakary MANGA \copyright URMPM/IMSP 2008}}
 \fancyfoot[L, RO]{\tiny \textbf{NGOM El hadji \copyright Universit\'e Cheikh Anta Diop de Dakar / 2015}}
-\fancyfoot[LO]{\tiny \emph{\textbf{Les M\'eta-heuristiques en Optimisation}}}
+\fancyfoot[LO]{\tiny \emph{\textbf{Les M\'etaheuristiques en Optimisation}}}
 %\fancyfoot[RE]{\tiny \textsl{Geometry }}
 
 \rhead{\textbf{\thepage}}
@@ -343,9 +343,9 @@ Cinq\or Six\or Sept \or Huit\or Neuf\or Dix\or Onze\fi}
 
 \begin{titlepage}
 \begin{center}
-\includegraphics[height=2cm,width=2cm]{UcadLogo} \\ 
+\includegraphics[height=2cm,width=2cm]{UcadLogo.pdf} \\ 
 {\bf Universit\'e Cheikh Anta Diop de Dakar (UCAD)} \\
-\includegraphics[height=2cm,width=2cm]{logo}
+\includegraphics[height=2cm,width=2cm]{logo.pdf}
 
 \vspace{0.2cm}
 {\bf Facult\'e Sciences et Techniques (FST)}\\
@@ -604,9 +604,9 @@ De ce fait, il a beaucoup contribu\'e au d\'emarrage de l'optimisation num\'eriq
  \end{description}
 
 %%%%%%%%%%%%%%%     SCHEMA ILLUSTRATIF DE LA METHODE
- \begin{cursive} 
-  {\bf Repr\'esentation graphique de la d\'ecomposition par B\&B appliqu\'ee au KP:}
- \end{cursive}
+% \begin{cursive} 
+  {\bf Repr\'esentation graphique de la d\'ecomposition par B\&B appliqu\'ee au KP:}\\
+ %\end{cursive}
 \underline{\bfseries Formulation math\'ematique du KP:} Dans ce cas, nous avons un sac \`a dos de maximal $P$ et $n$ oobjets. Pour chaque objet $i$, nous avons le poids $p_i$
  et une valeur ou utilit\'e $c_i$.\\
  variables de d\'ecision:
@@ -631,7 +631,7 @@ De ce fait, il a beaucoup contribu\'e au d\'emarrage de l'optimisation num\'eriq
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{figure}[h!]
   \begin{center}
-  \includegraphics[scale=0.6]{fig1}
+  \includegraphics[scale=1]{fig1.png}
   \caption{\label{fig1} Arbre engendr\'e par d\'ecomposition d'un probl\`eme}
   \end{center}
   \end{figure}
@@ -692,10 +692,10 @@ En supprimant la contrainte d'int\'egrit\'e du $PLE$, on obtient le $PL$ dit rel
   pour des probl\`emes raisonnables, l'algorithme peut converger parfois d'une mani\`ere trop lente vers la solution optimale.
  \end{remarque}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \begin{figure}
+ \begin{figure}[htbp]
   \begin{center}
-  \includegraphics[scale=1.3]{gomory}
-  \caption{\label{gomory} Structure de la methode de Gomory, (cf support de cours: Programmation en entiers p.164) }
+  \includegraphics[height=16cm,width=14cm]{gomory.pdf}
+  \caption{\label{gomory} Structure de la methode de Gomory, (cf support de cours: PE, p.164) }
   \end{center}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -742,26 +742,21 @@ comme on va le voir sur le travail pratique suivant:
  \right.
 \]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-On \'ecrit le $PL$ sous l'extension {\bf .lp } voir [\ref{fig2}]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \begin{figure}[]
-  \begin{center}
-  \includegraphics[height=12cm,width=16cm]{formatlp}
-  \caption{\label{fig2} Format ``.lp'' du PL comptible au Cplex}
-  \end{center}
-  \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+On \'ecrit le $PL$ sous l'extension {\bf .lp } voir (\ref{fig2}). \,
 On passe \`a la r\'esolution du $PL$ par le Cplex puis on ontient le r\'esultat suivant sur son terminal:
-  \begin{figure}[]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{figure}[htbp]
   \begin{center}
-  \includegraphics[height=7cm,width=16cm]{tp1}
+  \includegraphics[height=5cm,width=12cm]{formalp.png}
+  \includegraphics[height=8cm,width=16cm]{tp1.png}
   \caption{\label{fig2}Leture du PL au format ``.lp'' par Cplex.}
   \end{center}
   \end{figure}
+  \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \begin{figure}[]
+ \begin{figure}[htbp]
   \begin{center}
-  \includegraphics[height=8cm,width=15cm]{tp2}
+  \includegraphics[height=10cm,width=16cm]{tp2.png}
   \caption{\label{fig2} Details de r\'esolution et affichage du r\'esultat.}
   \end{center}
   \end{figure}
@@ -769,11 +764,11 @@ On passe \`a la r\'esolution du $PL$ par le Cplex puis on ontient le r\'esultat 
 \begin{remarque}
 Il \'existe bien d'autres m\'ethodes de r\'esolution \'exactes des probl\`emes d'optimisation comme la Programmation dynamique, la m\'ethde 
 de r\'esolution par Colonies etc. A ce groupe s'ajoute les methodes heuristiques que nous allons voir en d\'etails dans la section suivante.
-\end{remarque}
+\end{remarque}\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Les heuristiques}
-En Optimisation combinatoire, une {\bf heuristique} est un algorihme d'approximaton qui permet d'identifier en temps polynomial au moins une 
-une solution r\'ealisable rapide, mais obligatoirement optimale. L'usage d'une heuristique est efficace pour Calculer une solution approch\'ee
+En Optimisation combinatoire, une {\bf heuristique} est un algorihme d'approximaton qui permet d'identifier en temps polynomial au moins
+une solution r\'ealisable rapidement, mais obligatoirement optimale. L'usage d'une heuristique est efficace pour Calculer une solution approch\'ee
  d'un probl\`eme et ainsi acc\'el\'erer le processus de r\'esolution \'exacte. G\'en\'eralement une heuristique est con\c{c}ue pour un probl\`eme
  particulier en s'appuyant sur sa structure propre sans offrir aucune garantie quant \`a la qualit\'e de la solution Calcul\'ee. On distingue deux 
  cat\'egories d'heuristiques:
@@ -783,65 +778,82 @@ une solution r\'ealisable rapide, mais obligatoirement optimale. L'usage d'une h
   \item[\ding{247}] M\'ethodes de fouilles locales qui d\'emarrent avec solution initialement compl\`ete (probablement moins int\'eressante) et de mani\`ere 
   r\'ep\'etitive essaient d'am\'eliorer cette solution en explorant son voisinage.
  \end{description}
-\subsection*{La descente recursive (ou de recherche locale)}
-La m\'ethode de descente est l'une des heuristiques les lpus connues. C'est un exemple typique de recherche locale, elle progresse \`a travers l'ensemble 
-des solutions $X$ par le choix de la meilleure solution voisinage de la courante et ainsi de suite; ce processus s'interrompt d\'es que le premier minimum 
-local est atteint.\\
+\subsection{La descente recursive (recherche locale)}
+La m\'ethode de descente est l'une des heuristiques classiques les plus connues. C'est un exemple typique de recherche locale, elle progresse \`a 
+travers l'ensemble des solutions $X$ par le choix de la meilleure solution voisinage de la courante et ainsi de suite; ce processus s'interrompt d\'es
+que le premier minimum local est atteint. Pour un probl\`eme de minimisation d'une fonction $f$, l'algorithme de la descente peut \^etre d\'ecrit 
+comme suit:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Algo 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}
+\caption{\textsc{descente recursive}}
+\label{alg2}
+ \begin{algorithmic}
+ \STATE {Solution inintial $s$,}\\
+ \STATE{\bf R\'ep\'eter:} \\
+ \STATE{\algorithmicif { $f(s')<f(s)$}  \algorithmicthen { $s:=s'$,}}\\
+ \STATE{\bf Jusqu'\`a} ce que $f(s') \geq f(s) $,  $\forall s'\in N(s)$.
+\end{algorithmic}
+\end{algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{remarque}
 Cette heuristique est caract\'eris\'ee par sa simplicit\'e mais pr\'esente deux inconv\'enients:
 \begin{description}
  \item[\ding{245}] Suivant la taille et la structure du voisinage $N(s)$ consid\'er\'e, la recherche de la meilleure solution voisine qui peut \^etre 
- aussi difficile que le probl\`eme initial.
- \item[\ding{245}] Elle est incapable de progresser au del\`a du premier minimum local rencontr\'e. Par contre les probl\`emes d'optimisation combinatoires
-  comportent en g\'en\'erale plusieurs optima locaux pour lesquels la valeur de la fonction objectif peut \^etre fort \'eloign\'ee.
+ aussi difficile que le probl\`eme initial,
+ \item[\ding{245}] Elle est incapable de progresser au del\`a du premier minimum local rencontr\'e. Par contre les probl\`emes d'optimisation 
+ combinatoires comportent en g\'en\'erale plusieurs optima locaux pour lesquels la valeur de la fonction objectif peut \^etre fort \'eloign\'ee,
+ \item [\ding{245}] La descente recursive est la m\'ethode de recherche locale la plus \'el\'ementaire donc elle est de trajectoire.
 \end{description}
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Limites}
-
-
-
+\end{remarque}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
-
+Nous avons vu que comme les m\'ethodes \'exactes, les heuristiques classiques ne sont pas tr\'es satisfaisantes pour r\'esoudre efficacement en temps polynomial
+ les probl\`emes d'optimisation pr\'esentant une certaine complexit\'e. Les solutions issues de ces m\'ethodes ne garantisent point la qualit\'e de la
+  solution Calcul\'ee. Ains les chercheurs s'inpirent de la nature pour cr\'eer de nouvelles m\'ethodes plus g\'en\'erales et plus efficaces comme 
+  les m\'etaheuristiques.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Les m\'etaheuristiques}
 
 
-\subsection{Introduction}
+\section{Introduction}
+
+\subsubsection{D\'efinitions}
  
-\subsection{M\'ethodes \`a base de populations}
+\subsubsection{Classification}
 
-\subsubsection{Colonies des fourmis}
+ \section{M\'ethodes \`a base d'une seule solution}
 
-\subsubsection{Les algo-g\'en\'etiques}
+\subsection{Le Recuit simul\'e}
 
-\subsection{Methodes simples}
+\subsection{La recherche Tabou}
 
-\subsubsection{Recuit simil\'e}
+\section{Methodes \`a base de populations de solutions}
 
-\subsubsection{Metroplis}
+\subsection{Les colonies des fourmis}
 
-\subsection{conclusion}
+\subsection{Les algo-g\'en\'etiques}
+
+\subsection{L'Optimisation par essaim de particule}
+
+\subsection{La recherche dispers\'ee}
+
+\section{Conclusion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Exemples pratiques d'applications}
-\minitoc
-\subsection{Introduction}
+\section{Introduction}
 
-\subsection{Example 1}
+\section{Example 1}
 
-\subsection{Example 2}
+\section{Example 2}
 
-\subsection{Example 3}
+\section{Example 3}
 
-\subsection{conclusion}
+\section{Conclusion}
 
 \chapter*{Conclusion g\'en\'erale}
 \addstarredchapter{Conclusion}
