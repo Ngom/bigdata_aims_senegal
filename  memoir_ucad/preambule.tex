@@ -762,10 +762,13 @@ de r\'esolution par Colonies etc. A ce groupe s'ajoute les methodes heuristiques
 \end{remarque}\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Les heuristiques}
+\begin{definition}
 En Optimisation combinatoire, une {\bf heuristique} est un algorihme d'approximaton qui permet d'identifier en temps polynomial au moins
 une solution r\'ealisable rapidement, mais obligatoirement optimale. L'usage d'une heuristique est efficace pour Calculer une solution approch\'ee
  d'un probl\`eme et ainsi acc\'el\'erer le processus de r\'esolution \'exacte. G\'en\'eralement une heuristique est con\c{c}ue pour un probl\`eme
- particulier en s'appuyant sur sa structure propre sans offrir aucune garantie quant \`a la qualit\'e de la solution Calcul\'ee. On distingue deux 
+ particulier en s'appuyant sur sa structure propre sans offrir aucune garantie quant \`a la qualit\'e de la solution Calcul\'ee. 
+\end{definition}
+ On distingue deux 
  cat\'egories d'heuristiques:
  \begin{description}
   \item[\ding{247}] M\'ethodes constuctives qui g\'en\`erent des solutions \`a partir d'une solution initiale en essayant d'en ajouter petit \`a petit 
@@ -819,11 +822,16 @@ Nous avons vu que comme les m\'ethodes \'exactes, les heuristiques classiques ne
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Les m\'etaheuristiques}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
-
+Face aux difficult\'es rencontr\'ees par les heuristiques pour avoir une solution r\'ealisable de bonne qualit\'e pour des probl\`emes d'optimisation, 
+les m\'etaheuristiques font leur apparution. Ces algorithmes sont plus complets et complexes qu'une simple heuristique, et permettent g\'en\'erablement 
+d'obtenir une solution de tr\'es bonne qualit\'e des probl\`emes d'optimisation issus des domaines de la recherche op\'erationnelle ou de l'ing\'enieurie 
+dont on ne connait pas de m\'ethodes efficaces pour les traiter ou bien quand la r\'esolution n\'ecessite un temps de calcul \'elev\'e ou une grande 
+m\'emoire de stockage.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{D\'efinitions}
+
  
 \subsubsection{Classification}
 

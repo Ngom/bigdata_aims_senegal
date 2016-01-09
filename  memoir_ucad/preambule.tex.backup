@@ -445,11 +445,11 @@ probl\`eme dans un temps raisonnable.
 
 
 Deux approches sont g\'en\'eralement utilis\'ees. La premi\`ere cherche \`a trouver des
-solutions exactes, tandis que la seconde cherche \`a rapprocher le plus possible \`a la solution optimale, cette approche est concr\'etis\'ee par
-des m\'ethodes dites heuristiques, parmi elles, il existe des heuristiques applicables pour la majorit\'e des probl\`emes d'optimisation, on les
+solutions exactes, tandis que la seconde cherche \`a rapprocher le plus possible \`a la solution optimale. Cette derni\`ere approche est concr\'etis\'ee
+par des m\'ethodes dites heuristiques, parmi elles, il existe des heuristiques applicables pour la majorit\'e des probl\`emes d'optimisation, on les
 appelle les m\'etaheuristiques.
 \section*{\it Motivations:}
-Ce travail est guid\'e par une motivation principale:
+Ce travail est guid\'e par une motivation principale:\\
 
    Tout un chacun a d\'eja confront\'e \`a ce ph\'enom\`ene d'explosion combinaison qui transforme un probl\`eme apparemment tr\`es simple en un veritable 
    casse-t\^ete lorsqu'on augmente la taille du probl\`eme  \`a r\'esoudre.
@@ -464,11 +464,15 @@ afin r\'esoudre des probl\`emes d'optimisation diffiles en temps acceptable: on 
 Ces m\'etaheuristiques sont g\'er\'eralement bas\'ees sur une inspiration naturelle et disposent d'une puissance de calcul consid\'erable.  
 
 \section*{\it Plan du Travail:}
-Ce projet de m\'emoire est compos\'e dans sa structure de de trois chapitres:
-\begin{description}
- \item Dans premier chapitre, nous revenons sur certains acquis comme les m\'ethodes de r\'esolution exactes, les heuristiques classiques et la notion 
- compl
-\end{description}
+Ce projet de m\'emoire est compos\'e dans sa structure de trois chapitres:\\
+ 
+ - Dans le premier chapitre, nous revenons sur certains acquis comme les m\'ethodes de r\'esolution exactes, les heuristiques classiques et la notion 
+ complexit\'e des probl\`emes d'optimisation.
+
+ - Dans le second chapitre se trouve l'essentiel du sujet. Nous m\'enernons une \'etude d\'etaill\'ee et rigoureuse sur les techniques avanc\'ees 
+ de r\'esolution de probl\`emes d'optimisation que sont les m\'etaheuristiques.
+ 
+ - Dans le troisi\`eme et dernier chapitre, nous ferons des applications conr\'etes de m\'etaheuristiques sur des exemplee choisis.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -758,10 +762,13 @@ de r\'esolution par Colonies etc. A ce groupe s'ajoute les methodes heuristiques
 \end{remarque}\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Les heuristiques}
+\begin{definition}
 En Optimisation combinatoire, une {\bf heuristique} est un algorihme d'approximaton qui permet d'identifier en temps polynomial au moins
 une solution r\'ealisable rapidement, mais obligatoirement optimale. L'usage d'une heuristique est efficace pour Calculer une solution approch\'ee
  d'un probl\`eme et ainsi acc\'el\'erer le processus de r\'esolution \'exacte. G\'en\'eralement une heuristique est con\c{c}ue pour un probl\`eme
- particulier en s'appuyant sur sa structure propre sans offrir aucune garantie quant \`a la qualit\'e de la solution Calcul\'ee. On distingue deux 
+ particulier en s'appuyant sur sa structure propre sans offrir aucune garantie quant \`a la qualit\'e de la solution Calcul\'ee. 
+\end{definition}
+ On distingue deux 
  cat\'egories d'heuristiques:
  \begin{description}
   \item[\ding{247}] M\'ethodes constuctives qui g\'en\`erent des solutions \`a partir d'une solution initiale en essayant d'en ajouter petit \`a petit 
@@ -796,7 +803,7 @@ Cette heuristique est caract\'eris\'ee par sa simplicit\'e mais pr\'esente deux 
  \ref{descent},
   \begin{figure}[htbp]
   \begin{center}
-  \includegraphics[height=6cm,width=15cm]{descent.png}
+  \includegraphics[height=8cm,width=15cm]{descent.png}
   \caption{\label{descent} Blocage de la descente recursive par un minimum local.}
   \end{center}
   \end{figure}
@@ -804,6 +811,7 @@ Cette heuristique est caract\'eris\'ee par sa simplicit\'e mais pr\'esente deux 
 \end{description}
 \end{remarque}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 Nous avons vu que comme les m\'ethodes \'exactes, les heuristiques classiques ne sont pas tr\'es satisfaisantes pour r\'esoudre efficacement en temps polynomial
