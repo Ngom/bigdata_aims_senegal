@@ -437,59 +437,7 @@ Superviseurs &-& {\bf Prof. Salimata Gu\`eye Diagne (UCAD)   }      \\
 \addstarredchapter{Introduction g\'en\'erale}
 \fancyhead[L]{Introduction g\'en\'erale}
 \pagenumbering{arabic}
-
-L'optimisation est un concet bien naturel dans la vie courante: devant un probl\`eme en pr\'esence de plusieurs solutions possibles, tout individu
-coisit ( en g\'en\'eal) une solution qualifi\'ee de ``meilleur''.\\
-Les m\'ethodes \'exactes des problmes d'optimisation (combinatoire) permettent d'obtenir une solution dont l'optmalit\'e est garantie ou assur\'ee, 
-dans certaines situations, on peut cependant chercher des solutions de bonne qualit\'e, sans garantie d'optimalit\'e mais avec un temps beaucoup 
-consid\'erablement r\'eduit. Pour cela, on applique des m\'ethodes appel\'es  {\bf m\'etaheuristiques}  (ce mot vient du grec {\it meta} qui signifie 
-litt\'eralement "au d\'ela" mais '{\it \'a un plus haut niveau}' dans ce contexte), adapt\'ees \'a chaque probl\'eme trait\'e, avec seulement
-l'inconv\'enient de ne 
-pas disposer en retour d'aucune information sur la qualit\'e de la solution obtenue. Les heuristiques comme les m\'etaheuristiques exploitent
-generalement des
- processus al\'eatoires dans l'exploration de l'espace de recherche pour faire face \'a l'explosion combinatoire engendr\'ee par l'utilsation des methodes \'exactes. 
- Reposant sur une base stochastique, les m\'etaheuristiques sont plus souvent iteratives, ainsi le meme processus de recherche est rep\'et\'e lors de la r\'esolution.
- Les m\'etaheuristiques acqui\`erent une grande avantage par leur capacit\'e d'\'eviter les minima locaux en admettant des d\'egradations de la fonction objectve au
- cours de la progression.\\
- Grace \`a l'optimisation lineaire en nombres entiers, la discipline occupe une place capitale en mathematique d\'ecisionnaire, en recherche opreationnelle et en informatique.
- Des nombreuses applications peuvent \^etre mod\'elis\'ees sous la forme de probl\`eme d'optimisation en nombres entiers telles que le voyageur de commerce, le probl\`eme
- de coloration de graphe, les proble\`emes de localisation etc.
- En g\'en\'eral, on appelle programmation math\'ematique la recherche de l'optimum d'une fonction de plusieurs variables li\'ees entre elles
-  par des contraintes (sous formes'\'egalit\'e ou d'in\'egalit\'e). En particulier voici la forme standard d'une programmation lin\'eaire:
- $$
-    \left\{ 
-        \begin{array}{c}
-         \max  Z(x) \\
-         s.c.\\
-         H_i(x) \leq \alpha_i   \\
-         x \in S \subset \mathbb{R}^n
-        \end{array}
-     \right.
-     \hspace{1cm}
-    \left\{ 
-        \begin{array}{c}
-         \min  Z(x) \\
-         s.c.\\
-         H_i(x) \geq \alpha_i  \\
-         x \in S \subset \mathbb{R}^n
-        \end{array}
-     \right.  
- $$
- $$ i \in \{ 1, 2 , \hdots, m\}$$
-Ici le vecteur $x\in \mathbb{Z}^n $ a pour composantes $x_1, x_2, \hdots, x_m$ qui les inconnues du probl\`eme.
-La fonction $Z$ est la fonction objectif ( on dit parfois aussi: fonction \'economique) et l'ensemble des conditions: $H_i(x) \leq \alpha_i $ ou 
-$H_i(x) \geq \alpha_i $ avec $i\in \{1,2,\hdots,m\}$ et $x \in S$ sont les contraintes du probl\`eme. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Les m\'ethodes de r\'esolution exactes et heuristiques}
-%\minitoc
-\section{Introduction}
-R\'esoudre un probl\`eme d'optimisation lin\'eaire en nombres entiers consiste \`a chercher la meilleure solution possible pour ce probl\`eme, 
-d\'efinie comme la solution globabalement optimale ou un optimum global. La r\'esolution de ces probl\`emes dits \'egalement combinatoires est
-souvent assez d\'elicate puisque le nombre fini de solutions r\'ealisables cro\^it consi\'erablement avec la taille du probl\`eme, ainsi que sa 
-complexit\'e. Cette remarque a pouss\'e les chercheurs \`a d\'evelopper de nombreuses m\'ethodes de r\'esolution aussi bien qu'en Recherche op\'erqtioonelle
-(RO) qu'en intelligence artificielle (IA).\\
-Dans la section suivante, nous allons d'abord d\'efinir les notions de complexit\'e quant aux probl\`emes d'optmisation combinatoire.
+\section*{Contexte du travaill}  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Notions de compl\'exit\'e}
@@ -801,7 +749,14 @@ Cette heuristique est caract\'eris\'ee par sa simplicit\'e mais pr\'esente deux 
  \item[\ding{245}] Suivant la taille et la structure du voisinage $N(s)$ consid\'er\'e, la recherche de la meilleure solution voisine qui peut \^etre 
  aussi difficile que le probl\`eme initial,
  \item[\ding{245}] Elle est incapable de progresser au del\`a du premier minimum local rencontr\'e. Par contre les probl\`emes d'optimisation 
- combinatoires comportent en g\'en\'erale plusieurs optima locaux pour lesquels la valeur de la fonction objectif peut \^etre fort \'eloign\'ee,
+ combinatoires comportent en g\'en\'erale plusieurs optima locaux pour lesquels la valeur de la fonction objectif peut \^etre fort \'eloign\'ee 
+ \ref{descent},
+  \begin{figure}[htbp]
+  \begin{center}
+  \includegraphics[height=6cm,width=15cm]{descent.png}
+  \caption{\label{descent} Blocage de la descente recursive par un minimum local.}
+  \end{center}
+  \end{figure}
  \item [\ding{245}] La descente recursive est la m\'ethode de recherche locale la plus \'el\'ementaire donc elle est de trajectoire.
 \end{description}
 \end{remarque}
@@ -832,7 +787,7 @@ Nous avons vu que comme les m\'ethodes \'exactes, les heuristiques classiques ne
 
 \section{Methodes \`a base de populations de solutions}
 
-\subsection{Colonies des fourmis}
+\subsection{Les colonies des fourmis}
 
 \subsection{Les algo-g\'en\'etiques}
 
@@ -840,21 +795,20 @@ Nous avons vu que comme les m\'ethodes \'exactes, les heuristiques classiques ne
 
 \subsection{La recherche dispers\'ee}
 
-\subsection{conclusion}
+\section{Conclusion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Exemples pratiques d'applications}
-\minitoc
-\subsection{Introduction}
+\section{Introduction}
 
-\subsection{Example 1}
+\section{Example 1}
 
-\subsection{Example 2}
+\section{Example 2}
 
-\subsection{Example 3}
+\section{Example 3}
 
-\subsection{conclusion}
+\section{Conclusion}
 
 \chapter*{Conclusion g\'en\'erale}
 \addstarredchapter{Conclusion}

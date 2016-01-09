@@ -15,25 +15,25 @@
 \contentsline {section}{\numberline {1.4}Les heuristiques}{11}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}La descente recursive (recherche locale)}{11}{subsection.1.4.1}
 \contentsline {section}{\numberline {1.5}Conclusion}{11}{section.1.5}
-\contentsline {chapter}{\numberline {2}Les m\'etaheuristiques}{12}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{12}{section.2.1}
-\contentsline {subsubsection}{D\'efinitions}{12}{section*.10}
-\contentsline {subsubsection}{Classification}{12}{section*.11}
-\contentsline {section}{\numberline {2.2}M\'ethodes \`a base d'une seule solution}{12}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Le Recuit simul\'e}{12}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}La recherche Tabou}{12}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Methodes \`a base de populations de solutions}{12}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Les colonies des fourmis}{12}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Les algo-g\'en\'etiques}{12}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}L'Optimisation par essaim de particule}{12}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}La recherche dispers\'ee}{12}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Conclusion}{12}{section.2.4}
-\contentsline {chapter}{\numberline {3}Exemples pratiques d'applications}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Example 1}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Example 2}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}Example 3}{13}{section.3.4}
-\contentsline {section}{\numberline {3.5}Conclusion}{13}{section.3.5}
-\contentsline {starchapter}{Conclusion}{14}{chapter*.12}
-\contentsline {chapter}{References}{15}{chapter*.13}
-\contentsline {starchapter}{Bibliographie}{15}{chapter*.13}
+\contentsline {chapter}{\numberline {2}Les m\'etaheuristiques}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}
+\contentsline {subsubsection}{D\'efinitions}{13}{section*.13}
+\contentsline {subsubsection}{Classification}{13}{section*.14}
+\contentsline {section}{\numberline {2.2}M\'ethodes \`a base d'une seule solution}{13}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Le Recuit simul\'e}{13}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}La recherche Tabou}{13}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Methodes \`a base de populations de solutions}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Les colonies des fourmis}{13}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Les algo-g\'en\'etiques}{13}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}L'Optimisation par essaim de particule}{13}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}La recherche dispers\'ee}{13}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Conclusion}{13}{section.2.4}
+\contentsline {chapter}{\numberline {3}Exemples pratiques d'applications}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{14}{section.3.1}
+\contentsline {section}{\numberline {3.2}Example 1}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Example 2}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Example 3}{14}{section.3.4}
+\contentsline {section}{\numberline {3.5}Conclusion}{14}{section.3.5}
+\contentsline {starchapter}{Conclusion}{15}{chapter*.15}
+\contentsline {chapter}{References}{16}{chapter*.16}
+\contentsline {starchapter}{Bibliographie}{16}{chapter*.16}

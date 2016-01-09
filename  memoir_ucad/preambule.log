@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.21)  8 JAN 2016 01:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.21)  9 JAN 2016 01:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -878,6 +878,8 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!] (./preambule.lot)
 \tf@lot=\write8
 \openout8 = `preambule.lot'.
@@ -892,7 +894,7 @@ Non-PDF special ignored!]pdfTeX warning (ext4): destination with the same ident
 ifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.484 \chapter
+l.457 \chapter
               {Les m\'ethodes de r\'esolution exactes et heuristiques} [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -924,13 +926,13 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-Overfull \hbox (16.01967pt too wide) in paragraph at lines 576--582
+Overfull \hbox (16.01967pt too wide) in paragraph at lines 549--555
 [][]\T1/cmr/m/n/10.95 l'évaluation per-met de re-diure l'es-pace en éli-mi-nant
  quelques sous en-sembles qui ne contiennent
  []
 
 
-Overfull \hbox (3.64857pt too wide) in paragraph at lines 585--589
+Overfull \hbox (3.64857pt too wide) in paragraph at lines 558--562
 \T1/cmr/m/n/10.95 construire un arbre per-met-tant d'énu-me-rer toutes les so-l
 u-tions. L'en-semble des noeuds
  []
@@ -963,11 +965,11 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] <fig1.png, id=308, 361.35pt x 252.945pt>
+Non-PDF special ignored!] <fig1.png, id=312, 361.35pt x 252.945pt>
 File: fig1.png Graphic file (type png)
 
 <use fig1.png>
-Package pdftex.def Info: fig1.png used on input line 634.
+Package pdftex.def Info: fig1.png used on input line 607.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
  [5
 Non-PDF special ignored!
@@ -982,16 +984,16 @@ fier (name{figure.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.652 \end{equation}
+l.625 \end{equation}
                     
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./fig1.png>]
-<gomory.pdf, id=314, 352.31625pt x 481.8pt>
+<gomory.pdf, id=320, 352.31625pt x 481.8pt>
 File: gomory.pdf Graphic file (type pdf)
  <use gomory.pdf>
-Package pdftex.def Info: gomory.pdf used on input line 697.
+Package pdftex.def Info: gomory.pdf used on input line 670.
 (pdftex.def)             Requested size: 398.33852pt x 455.2593pt.
  [6
 Non-PDF special ignored!
@@ -1016,28 +1018,28 @@ fier (name{figure.1.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.709 \[
+l.682 \[
         (\min c^T x \, : Ax  \geq b ,\, x \in \mathbb{R}^n  ) \]  o\`u  $A\i...
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./gomory.pdf>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 712.
+put line 685.
 
-<formalp.png, id=338, 315.42844pt x 210.7875pt>
+<formalp.png, id=344, 315.42844pt x 210.7875pt>
 File: formalp.png Graphic file (type png)
  <use formalp.png>
-Package pdftex.def Info: formalp.png used on input line 750.
+Package pdftex.def Info: formalp.png used on input line 723.
 (pdftex.def)             Requested size: 341.45178pt x 142.26578pt.
 
-<tp1.png, id=339, 456.95718pt x 176.15813pt>
+<tp1.png, id=345, 456.95718pt x 176.15813pt>
 File: tp1.png Graphic file (type png)
  <use tp1.png>
-Package pdftex.def Info: tp1.png used on input line 751.
+Package pdftex.def Info: tp1.png used on input line 724.
 (pdftex.def)             Requested size: 455.2617pt x 227.62123pt.
 
-Overfull \hbox (24.12982pt too wide) in paragraph at lines 750--752
+Overfull \hbox (24.12982pt too wide) in paragraph at lines 723--725
  [] 
  []
 
@@ -1080,19 +1082,19 @@ fier (name{figure.1.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.755   \newpage
+l.728   \newpage
                 
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./formalp.png (PNG copy)> <./tp1.png>]
-<tp2.png, id=358, 433.62pt x 292.84406pt>
+<tp2.png, id=364, 433.62pt x 292.84406pt>
 File: tp2.png Graphic file (type png)
  <use tp2.png>
-Package pdftex.def Info: tp2.png used on input line 759.
+Package pdftex.def Info: tp2.png used on input line 732.
 (pdftex.def)             Requested size: 455.26813pt x 284.55438pt.
 
-Overfull \hbox (24.13625pt too wide) in paragraph at lines 759--760
+Overfull \hbox (24.13625pt too wide) in paragraph at lines 732--733
  [][] 
  []
 
@@ -1109,14 +1111,20 @@ fier (name{figure.1.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.767 \end{remarque}\newpage
+l.740 \end{remarque}\newpage
                             
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./tp2.png>] [11
+Non-PDF special ignored! <./tp2.png>]
+<descent.png, id=374, 401.5pt x 200.75pt>
+File: descent.png Graphic file (type png)
+ <use descent.png>
+Package pdftex.def Info: descent.png used on input line 781.
+(pdftex.def)             Requested size: 426.81937pt x 170.72713pt.
+ [11
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1142,13 +1150,31 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]
+Non-PDF special ignored!] [12
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.1.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.798 \chapter
+              {Les m\'etaheuristiques}
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored! <./descent.png>]
 Chapitre 2.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 823.
+(hyperref)                than one, level fixed on input line 803.
 
-[12
+[13
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -1156,20 +1182,20 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
 Chapitre 3.
-[13
+[14
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!] [14
+Non-PDF special ignored!] [15
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 Non-PDF special ignored!
 Non-PDF special ignored!]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 905.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 885.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1196,8 +1222,8 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the preambule.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 945.
-[15
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 925.
+[16
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -1234,54 +1260,55 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 945.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 925.
  (./preambule.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 945.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 945.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 925.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 925.
 Package rerunfilecheck Info: File `preambule.out' has not changed.
-(rerunfilecheck)             Checksum: E8237AD1474EFD25C075CDD455EC4132;2586.
+(rerunfilecheck)             Checksum: ACF83A8CDF6773F8A1C11A48C656BFC5;2586.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 945.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 925.
  ) 
 Here is how much of TeX's memory you used:
- 12217 strings out of 494383
- 166399 string characters out of 6163743
- 323346 words of memory out of 5000000
- 14874 multiletter control sequences out of 15000+600000
- 26833 words of font info for 71 fonts, out of 8000000 for 9000
+ 12230 strings out of 494383
+ 166557 string characters out of 6163743
+ 322346 words of memory out of 5000000
+ 14880 multiletter control sequences out of 15000+600000
+ 27534 words of font info for 72 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  36i,16n,48p,3252b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/elhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home
 /elhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/elhadji/
-.texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc2488.600pk> </home/elhadji/.texmf-va
-r/fonts/pk/ljfour/jknappen/ec/eccc1095.600pk> </home/elhadji/.texmf-var/fonts/p
-k/ljfour/jknappen/ec/ecti1095.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/
-jknappen/ec/ecsl1095.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecbx0600.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi06
-00.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk>
- </home/elhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/e
-lhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/elhadji/.t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/elhadji/.texmf-var/
-fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/elhadji/.texmf-var/fonts/pk/
-ljfour/jknappen/ec/ecbi1095.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/jk
-nappen/ec/ecbx1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cmextra/cmbsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/zapfding/uzdr.pfb>
-Output written on preambule.pdf (24 pages, 615272 bytes).
+.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/elhadji/.texmf-va
+r/fonts/pk/ljfour/jknappen/ec/ecxc2488.600pk> </home/elhadji/.texmf-var/fonts/p
+k/ljfour/jknappen/ec/eccc1095.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/
+jknappen/ec/ecbi1440.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecsl1095.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx06
+00.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi0600.600pk>
+ </home/elhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/e
+lhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/elhadji/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/elhadji/.texmf-var/
+fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/elhadji/.texmf-var/fonts/pk/
+ljfour/jknappen/ec/ecbx1440.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecbi1095.600pk> </home/elhadji/.texmf-var/fonts/pk/ljfour/jknappen/ec
+/ecbx1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmex
+tra/cmbsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/zapfding/uzdr.pfb>
+Output written on preambule.pdf (25 pages, 638018 bytes).
 PDF statistics:
- 1069 PDF objects out of 1200 (max. 8388607)
- 471 compressed objects within 5 object streams
- 113 named destinations out of 1000 (max. 500000)
- 340 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1101 PDF objects out of 1200 (max. 8388607)
+ 486 compressed objects within 5 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 345 words of extra memory for PDF output out of 10000 (max. 10000000)
 
