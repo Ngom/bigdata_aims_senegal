@@ -437,7 +437,50 @@ Superviseurs &-& {\bf Prof. Salimata Gu\`eye Diagne (UCAD)   }      \\
 \addstarredchapter{Introduction g\'en\'erale}
 \fancyhead[L]{Introduction g\'en\'erale}
 \pagenumbering{arabic}
-\section*{Contexte du travaill}  
+\section*{\it Contexte du travail:}  
+Ce travail s'inscrit dans le domaine de r\'esolution des probl\`emes d'optimisations difficiles avec l'utilisation des m\'ethodes approximatives 
+dites m\'etaheuristiques. Dans ce type d'approches, on cherche \`a trouver des solutions pour des probl\'emes class\'es "difficiles" en terme de temps de 
+calcul pour les r\'esoudre. G\'en\'eralement, on peut dire qu'un probl\`eme est difficile si on ne peut pas localiser la meilleure solution de ce 
+probl\`eme dans un temps raisonnable. 
+
+
+Deux approches sont g\'en\'eralement utilis\'ees. La premi\`ere cherche \`a trouver des
+solutions exactes, tandis que la seconde cherche \`a rapprocher le plus possible \`a la solution optimale, cette approche est concr\'etis\'ee par
+des m\'ethodes dites heuristiques, parmi elles, il existe des heuristiques applicables pour la majorit\'e des probl\`emes d'optimisation, on les
+appelle les m\'etaheuristiques.
+\section*{\it Motivations:}
+Ce travail est guid\'e par une motivation principale:
+
+   Tout un chacun a d\'eja confront\'e \`a ce ph\'enom\`ene d'explosion combinaison qui transforme un probl\`eme apparemment tr\`es simple en un veritable 
+   casse-t\^ete lorsqu'on augmente la taille du probl\`eme  \`a r\'esoudre.
+
+L'enjeu pour r\'esoudre ces probl\`emes est de taille: un tr\`es grand nombres de probl\`emes industriels sont confront\'es \`a ce type de ph\'enom\`ene 
+d'explosion combinatoire comme, par exemple les probl\`emes de planication d'une production en minimisant les pertes de temps, les porbl\`emes de
+localistion, de transport de produits, de recouvrement, ...
+
+Il est crucial pour nous d'entreprendre une \'etude rigoureuse d'approches "intelligentes" capables de contenir ou contourner des situations pareilles 
+afin r\'esoudre des probl\`emes d'optimisation diffiles en temps acceptable: on parle de {\bf m\'etaheuristiques}.
+
+Ces m\'etaheuristiques sont g\'er\'eralement bas\'ees sur une inspiration naturelle et disposent d'une puissance de calcul consid\'erable.  
+
+\section*{\it Plan du Travail:}
+Ce projet de m\'emoire est compos\'e dans sa structure de de trois chapitres:
+\begin{description}
+ \item Dans premier chapitre, nous revenons sur certains acquis comme les m\'ethodes de r\'esolution exactes, les heuristiques classiques et la notion 
+ compl
+\end{description}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Les m\'ethodes de r\'esolution exactes et heuristiques}
+%\minitoc
+\section{Introduction}
+R\'esoudre un probl\`eme d'optimisation lin\'eaire en nombres entiers consiste \`a chercher la meilleure solution possible pour ce probl\`eme, 
+d\'efinie comme la solution globabalement optimale ou un optimum global. La r\'esolution de ces probl\`emes dits \'egalement combinatoires est
+souvent assez d\'elicate puisque le nombre fini de solutions r\'ealisables cro\^it consi\'erablement avec la taille du probl\`eme, ainsi que sa 
+complexit\'e. Cette remarque a pouss\'e les chercheurs \`a d\'evelopper de nombreuses m\'ethodes de r\'esolution aussi bien qu'en Recherche op\'erqtioonelle
+(RO) qu'en intelligence artificielle (IA).\\
+Dans la section suivante, nous allons d'abord d\'efinir les notions de complexit\'e quant aux probl\`emes d'optmisation combinatoire.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Notions de compl\'exit\'e}
@@ -696,7 +739,7 @@ On passe \`a la r\'esolution du $PL$ par le Cplex puis on ontient le r\'esultat 
   \begin{figure}[htbp]
   \begin{center}
   \includegraphics[height=5cm,width=12cm]{formalp.png}
-  \includegraphics[height=8cm,width=16cm]{tp1.png}
+  \includegraphics[height=8cm,width=16cm]{tp1.pdf}
   \caption{\label{fig2}Leture du PL au format ``.lp'' par Cplex.}
   \end{center}
   \end{figure}

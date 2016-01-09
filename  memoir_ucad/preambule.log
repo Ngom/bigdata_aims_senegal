@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.21)  9 JAN 2016 01:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.21)  9 JAN 2016 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -890,20 +890,34 @@ Non-PDF special ignored!
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.1}) has been already used, duplicate ignored
+Non-PDF special ignored!]
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.457 \chapter
-              {Les m\'ethodes de r\'esolution exactes et heuristiques} [1
+l.471 
+       [1
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
+Non-PDF special ignored!
+Non-PDF special ignored!] [2
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
 Chapitre 1.
-[2
+[3
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -913,7 +927,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [3
+Non-PDF special ignored!] [4
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -926,18 +940,18 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-Overfull \hbox (16.01967pt too wide) in paragraph at lines 549--555
+Overfull \hbox (16.01967pt too wide) in paragraph at lines 571--577
 [][]\T1/cmr/m/n/10.95 l'évaluation per-met de re-diure l'es-pace en éli-mi-nant
  quelques sous en-sembles qui ne contiennent
  []
 
 
-Overfull \hbox (3.64857pt too wide) in paragraph at lines 558--562
+Overfull \hbox (3.64857pt too wide) in paragraph at lines 580--584
 \T1/cmr/m/n/10.95 construire un arbre per-met-tant d'énu-me-rer toutes les so-l
 u-tions. L'en-semble des noeuds
  []
 
-[4
+[5
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -965,13 +979,13 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] <fig1.png, id=312, 361.35pt x 252.945pt>
+Non-PDF special ignored!] <fig1.png, id=316, 361.35pt x 252.945pt>
 File: fig1.png Graphic file (type png)
 
 <use fig1.png>
-Package pdftex.def Info: fig1.png used on input line 607.
+Package pdftex.def Info: fig1.png used on input line 629.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
- [5
+ [6
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -984,18 +998,18 @@ fier (name{figure.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.625 \end{equation}
+l.647 \end{equation}
                     
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./fig1.png>]
-<gomory.pdf, id=320, 352.31625pt x 481.8pt>
+<gomory.pdf, id=324, 352.31625pt x 481.8pt>
 File: gomory.pdf Graphic file (type pdf)
  <use gomory.pdf>
-Package pdftex.def Info: gomory.pdf used on input line 670.
+Package pdftex.def Info: gomory.pdf used on input line 692.
 (pdftex.def)             Requested size: 398.33852pt x 455.2593pt.
- [6
+ [7
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1005,7 +1019,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [7
+Non-PDF special ignored!] [8
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1018,32 +1032,32 @@ fier (name{figure.1.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.682 \[
+l.704 \[
         (\min c^T x \, : Ax  \geq b ,\, x \in \mathbb{R}^n  ) \]  o\`u  $A\i...
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./gomory.pdf>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 685.
+put line 707.
 
-<formalp.png, id=344, 315.42844pt x 210.7875pt>
+<formalp.png, id=348, 315.42844pt x 210.7875pt>
 File: formalp.png Graphic file (type png)
  <use formalp.png>
-Package pdftex.def Info: formalp.png used on input line 723.
+Package pdftex.def Info: formalp.png used on input line 745.
 (pdftex.def)             Requested size: 341.45178pt x 142.26578pt.
 
-<tp1.png, id=345, 456.95718pt x 176.15813pt>
-File: tp1.png Graphic file (type png)
- <use tp1.png>
-Package pdftex.def Info: tp1.png used on input line 724.
+<tp1.pdf, id=349, 456.95718pt x 176.15813pt>
+File: tp1.pdf Graphic file (type pdf)
+ <use tp1.pdf>
+Package pdftex.def Info: tp1.pdf used on input line 746.
 (pdftex.def)             Requested size: 455.2617pt x 227.62123pt.
 
-Overfull \hbox (24.12982pt too wide) in paragraph at lines 723--725
+Overfull \hbox (24.12982pt too wide) in paragraph at lines 745--747
  [] 
  []
 
-[8
+[9
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1067,7 +1081,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [9
+Non-PDF special ignored!] [10
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1082,23 +1096,23 @@ fier (name{figure.1.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.728   \newpage
+l.750   \newpage
                 
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./formalp.png (PNG copy)> <./tp1.png>]
-<tp2.png, id=364, 433.62pt x 292.84406pt>
+Non-PDF special ignored! <./formalp.png (PNG copy)> <./tp1.pdf>]
+<tp2.png, id=373, 433.62pt x 292.84406pt>
 File: tp2.png Graphic file (type png)
  <use tp2.png>
-Package pdftex.def Info: tp2.png used on input line 732.
+Package pdftex.def Info: tp2.png used on input line 754.
 (pdftex.def)             Requested size: 455.26813pt x 284.55438pt.
 
-Overfull \hbox (24.13625pt too wide) in paragraph at lines 732--733
+Overfull \hbox (24.13625pt too wide) in paragraph at lines 754--755
  [][] 
  []
 
-[10
+[11
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1111,7 +1125,7 @@ fier (name{figure.1.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.740 \end{remarque}\newpage
+l.762 \end{remarque}\newpage
                             
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1119,12 +1133,12 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./tp2.png>]
-<descent.png, id=374, 401.5pt x 200.75pt>
+<descent.png, id=382, 401.5pt x 200.75pt>
 File: descent.png Graphic file (type png)
  <use descent.png>
-Package pdftex.def Info: descent.png used on input line 781.
-(pdftex.def)             Requested size: 426.81937pt x 170.72713pt.
- [11
+Package pdftex.def Info: descent.png used on input line 803.
+(pdftex.def)             Requested size: 426.81937pt x 227.63821pt.
+ [12
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1150,7 +1164,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [12
+Non-PDF special ignored!] [13
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1163,7 +1177,7 @@ fier (name{figure.1.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.798 \chapter
+l.821 \chapter
               {Les m\'etaheuristiques}
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1172,9 +1186,9 @@ Non-PDF special ignored! <./descent.png>]
 Chapitre 2.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 803.
+(hyperref)                than one, level fixed on input line 826.
 
-[13
+[14
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -1182,20 +1196,20 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
 Chapitre 3.
-[14
+[15
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!] [15
+Non-PDF special ignored!] [16
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 Non-PDF special ignored!
 Non-PDF special ignored!]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 885.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 908.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1222,8 +1236,8 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the preambule.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 925.
-[16
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 948.
+[17
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -1260,22 +1274,22 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 925.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 948.
  (./preambule.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 925.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 925.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 948.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 948.
 Package rerunfilecheck Info: File `preambule.out' has not changed.
 (rerunfilecheck)             Checksum: ACF83A8CDF6773F8A1C11A48C656BFC5;2586.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 925.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 948.
  ) 
 Here is how much of TeX's memory you used:
- 12230 strings out of 494383
- 166557 string characters out of 6163743
- 322346 words of memory out of 5000000
+ 12231 strings out of 494383
+ 166564 string characters out of 6163743
+ 323346 words of memory out of 5000000
  14880 multiletter control sequences out of 15000+600000
  27534 words of font info for 72 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
@@ -1305,10 +1319,10 @@ ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/zapfding/uzdr.pfb>
-Output written on preambule.pdf (25 pages, 638018 bytes).
+Output written on preambule.pdf (26 pages, 506320 bytes).
 PDF statistics:
- 1101 PDF objects out of 1200 (max. 8388607)
- 486 compressed objects within 5 object streams
- 118 named destinations out of 1000 (max. 500000)
+ 1110 PDF objects out of 1200 (max. 8388607)
+ 492 compressed objects within 5 object streams
+ 119 named destinations out of 1000 (max. 500000)
  345 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -437,7 +437,7 @@ Superviseurs &-& {\bf Prof. Salimata Gu\`eye Diagne (UCAD)   }      \\
 \addstarredchapter{Introduction g\'en\'erale}
 \fancyhead[L]{Introduction g\'en\'erale}
 \pagenumbering{arabic}
-\section*{\it Contexte du travaill}  
+\section*{\it Contexte du travail:}  
 Ce travail s'inscrit dans le domaine de r\'esolution des probl\`emes d'optimisations difficiles avec l'utilisation des m\'ethodes approximatives 
 dites m\'etaheuristiques. Dans ce type d'approches, on cherche \`a trouver des solutions pour des probl\'emes class\'es "difficiles" en terme de temps de 
 calcul pour les r\'esoudre. G\'en\'eralement, on peut dire qu'un probl\`eme est difficile si on ne peut pas localiser la meilleure solution de ce 
@@ -445,13 +445,35 @@ probl\`eme dans un temps raisonnable.
 
 
 Deux approches sont g\'en\'eralement utilis\'ees. La premi\`ere cherche \`a trouver des
-solutions exactes, tandis que la seconde cherche \`a rapprocher le plus possible \`a la solution optimale, cette approche est concr\'etis\'ee par
-des m\'ethodes dites heuristiques, parmi elles, il existe des heuristiques applicables pour la majorit\'e des probl\`emes d'optimisation, on les
+solutions exactes, tandis que la seconde cherche \`a rapprocher le plus possible \`a la solution optimale. Cette derni\`ere approche est concr\'etis\'ee
+par des m\'ethodes dites heuristiques, parmi elles, il existe des heuristiques applicables pour la majorit\'e des probl\`emes d'optimisation, on les
 appelle les m\'etaheuristiques.
-\section*{\it Motivations}
+\section*{\it Motivations:}
+Ce travail est guid\'e par une motivation principale:\\
 
+   Tout un chacun a d\'eja confront\'e \`a ce ph\'enom\`ene d'explosion combinaison qui transforme un probl\`eme apparemment tr\`es simple en un veritable 
+   casse-t\^ete lorsqu'on augmente la taille du probl\`eme  \`a r\'esoudre.
 
-\section*{\it Plan du Travail}
+L'enjeu pour r\'esoudre ces probl\`emes est de taille: un tr\`es grand nombres de probl\`emes industriels sont confront\'es \`a ce type de ph\'enom\`ene 
+d'explosion combinatoire comme, par exemple les probl\`emes de planication d'une production en minimisant les pertes de temps, les porbl\`emes de
+localistion, de transport de produits, de recouvrement, ...
+
+Il est crucial pour nous d'entreprendre une \'etude rigoureuse d'approches "intelligentes" capables de contenir ou contourner des situations pareilles 
+afin r\'esoudre des probl\`emes d'optimisation diffiles en temps acceptable: on parle de {\bf m\'etaheuristiques}.
+
+Ces m\'etaheuristiques sont g\'er\'eralement bas\'ees sur une inspiration naturelle et disposent d'une puissance de calcul consid\'erable.  
+
+\section*{\it Plan du Travail:}
+Ce projet de m\'emoire est compos\'e dans sa structure de trois chapitres:\\
+ 
+ - Dans le premier chapitre, nous revenons sur certains acquis comme les m\'ethodes de r\'esolution exactes, les heuristiques classiques et la notion 
+ complexit\'e des probl\`emes d'optimisation.
+
+ - Dans le second chapitre se trouve l'essentiel du sujet. Nous m\'enernons une \'etude d\'etaill\'ee et rigoureuse sur les techniques avanc\'ees 
+ de r\'esolution de probl\`emes d'optimisation que sont les m\'etaheuristiques.
+ 
+ - Dans le troisi\`eme et dernier chapitre, nous ferons des applications conr\'etes de m\'etaheuristiques sur des exemplee choisis.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Les m\'ethodes de r\'esolution exactes et heuristiques}
@@ -721,7 +743,7 @@ On passe \`a la r\'esolution du $PL$ par le Cplex puis on ontient le r\'esultat 
   \begin{figure}[htbp]
   \begin{center}
   \includegraphics[height=5cm,width=12cm]{formalp.png}
-  \includegraphics[height=8cm,width=16cm]{tp1.png}
+  \includegraphics[height=8cm,width=16cm]{tp1.pdf}
   \caption{\label{fig2}Leture du PL au format ``.lp'' par Cplex.}
   \end{center}
   \end{figure}
@@ -778,7 +800,7 @@ Cette heuristique est caract\'eris\'ee par sa simplicit\'e mais pr\'esente deux 
  \ref{descent},
   \begin{figure}[htbp]
   \begin{center}
-  \includegraphics[height=6cm,width=15cm]{descent.png}
+  \includegraphics[height=8cm,width=15cm]{descent.png}
   \caption{\label{descent} Blocage de la descente recursive par un minimum local.}
   \end{center}
   \end{figure}
@@ -786,6 +808,7 @@ Cette heuristique est caract\'eris\'ee par sa simplicit\'e mais pr\'esente deux 
 \end{description}
 \end{remarque}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 Nous avons vu que comme les m\'ethodes \'exactes, les heuristiques classiques ne sont pas tr\'es satisfaisantes pour r\'esoudre efficacement en temps polynomial
