@@ -830,10 +830,45 @@ d'obtenir une solution de tr\'es bonne qualit\'e des probl\`emes d'optimisation 
 dont on ne connait pas de m\'ethodes efficaces pour les traiter ou bien quand la r\'esolution n\'ecessite un temps de calcul \'elev\'e ou une grande 
 m\'emoire de stockage.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{D\'efinitions}
+\subsection{D\'efinitions}
+Le mot m\'etaheuristique est compos\'e de deux mots; le mot {\it m\'eta} qui est pr\'efixe signifiant {\bf ``au d\'ela''} ou bien ``dans un niveau 
+sup\'eerieur''; et du mot {\it heuristique} qui vient de {\bf heuriskein} qui signifie ``trouver''.
 
+Il n'y a pas clairement de consensus sur la d\'efinition exacte des heuristiques et des m\'etaheuristiques, nous allons adopter celles-ci:
+
+ \ding{51} Une heuristique est une technique de r\'esolution sp\'ecialis\'ee \`a un probl\`eme. Elle ne garantit pas la qualit\'e de la solution.
  
-\subsubsection{Classification}
+ \ding{51} Une m\'etaheuristique est une heuristique g\'en\'erique qu'il faut adapter \`a chaque probl\`eme.
+ 
+ Dans la litterature on trouve d\'efinitions qui expliquent bien la notion de m\'etaheuristique, citons:
+ 
+ ``{\it A metaheuristic is formally defined as an iterative generation process which guides a subordinate heuristic by combiningintelligently different
+ concepts for exploring and exploiting the search space, learning strategies are used to structure information in order to find efficiently
+ near-optimal solutions.}'' \footnote{I.H. Osman and G. Laporte, Metaheuristics: a bibliography. Annals of Operations Research 63, 513-623,
+ 1996.}\vspace{0.5cm}
+ 
+ 
+  ``{\it A metaheuristic is an iterative master process that guides and modifies the operations of subordinate heuristics to efficiently produce
+  high-quality solutions. It may manipulate a complete (or incomplete) single solution or a collection of solutions at each iteration. The
+  subordinate heuristics may be high (or low) level procedures, or a simple local search, or just a constructive method.}'' \footnote{S. VoB, S. Martello, 
+  I.H. Osman and C. Roucairol, Meta-Heuristics - Advances and Trends in Local Search Paradigms for Optimization. Kluwer Academic Publishers, 
+  Dordrecht, The Netherlands, (1999).}\vspace{0.5cm}
+  
+  
+  ``{\it A metaheuristic is a set of concepts that can be used to define heuristic methods that can be applied to a wide set of different problems.
+  In other words, a metaheuristic can be seen as a general algorithmic framework which can be applied to different optimization problems with
+  relatively few modifications to make them adapted to a specific problem.}'' \footnote{Metaheuristics Network Website, consult\'e en novembre 2015}
+  \vspace{0.5cm}
+  
+  ''{\it Une m\'etaheuristique est un algorithme d'optimisation visant \`a r\'esoudre des probl\`emes d'optimisation difficile (souvent issus des domaines
+  de la recherche op\'erationnelle, de l'ing\'enierie ou de l'intelligence artificielle) pour lesquels on ne conna\^it pas de m\'ethode classique plus
+  efficace. Les m\'etaheuristiques sont g\'en\'eralement des algorithmes stochastiques it\'eratifs, qui progressent vers un optimum global,
+  c'est-\`a-dire l'extremum global d'une fonction, par \'echantillonnage d'une fonction objectif. Elles se comportent comme des algorithmes de recherche,
+  tentant d'apprendre les caract\'eristiques d'un probl\`eme afin d'en trouver une approximation de la meilleure solution (d'une mani\`ere proche
+  des algorithmes d'approximation)}''  \footnote{Wikipedia, consult\'e en novenbre 2015}
+\subsection{Caract\'erisations des m\'etaheuristiques}
+
+\subsection{Classification des m\'etaheuristiques}
 
  \section{M\'ethodes \`a base d'une seule solution}
 
@@ -950,7 +985,24 @@ Fouad Bekkari,
 \emph{[M\'emoire de Magist\`ere]: R\'esolution des probl\`emes difficiles par optimisation distribu\'ee}
 UNIVERSITE MOHAMED KHIDER BISKRA, Alg\'erie, 2008.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\bibitem{Osman}
+Osman I.H and Laporte G,
+\emph{Metaheuristics: a bibliography}
+Annals of Operations Research 63, 513-623, 1996.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{ih}
+Osman I.H and Roucairol C. (Eds),
+\emph{Meta-Heuristics - Advances and Trends in Local Search Paradigms for Optimization,}
+ Kluwer Academic Publishers, Dordrecht, The Netherlands, (1999).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{sitemetaweb}
+Metaheuristics Network Website, consult\'e en novembre 2015,\\
+\url{http://www.metaheuristics.net/index.php\%3Fmain=1.html}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{Wikipedia}
+Wikipedia, consult\'e en novembre 2015,\\
+\url{https://en.wikipedia.org/wiki/Metaheuristic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{thebibliography}
 
 \end{document}

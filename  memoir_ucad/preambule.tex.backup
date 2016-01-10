@@ -822,12 +822,28 @@ Nous avons vu que comme les m\'ethodes \'exactes, les heuristiques classiques ne
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Les m\'etaheuristiques}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
-
+Face aux difficult\'es rencontr\'ees par les heuristiques pour avoir une solution r\'ealisable de bonne qualit\'e pour des probl\`emes d'optimisation, 
+les m\'etaheuristiques font leur apparution. Ces algorithmes sont plus complets et complexes qu'une simple heuristique, et permettent g\'en\'erablement 
+d'obtenir une solution de tr\'es bonne qualit\'e des probl\`emes d'optimisation issus des domaines de la recherche op\'erationnelle ou de l'ing\'enieurie 
+dont on ne connait pas de m\'ethodes efficaces pour les traiter ou bien quand la r\'esolution n\'ecessite un temps de calcul \'elev\'e ou une grande 
+m\'emoire de stockage.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{D\'efinitions}
+Le mot m\'etaheuristique est compos\'e de deux mots; le mot {\it m\'eta} qui est pr\'efixe signifiant {\bf ``au d\'ela''} ou bien ``dans un niveau 
+sup\'eerieur''; et du mot {\it heuristique} qui vient de {\bf heuriskein} qui signifie ``trouver''.
+
+Il n'y a pas clairement de consensus sur la d\'efinition exacte des heuristiques et des m\'etaheuristiques, nous allons adopter celles-ci:
+
+ \ding{51} Une heuristique est une technique de r\'esolution sp\'ecialis\'ee \`a un probl\`eme. Elle ne garantit pas la qualit\'e de la solution.
  
+ \ding{51} Une m\'etaheuristique est une heuristique g\'en\'erique qu'il faut adapter \`a chaque probl\`eme.
+ 
+ Dans la litterature on trouve d\'efinitions qui expliquent bien la notion de m\'etaheuristique, citons:
+
+\subsubsection{caract\'erisation}
+
 \subsubsection{Classification}
 
  \section{M\'ethodes \`a base d'une seule solution}
