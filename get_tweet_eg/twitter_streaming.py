@@ -7,24 +7,24 @@ import sys
 import os
 
 
-print 'code name is: ',sys.argv[0]
+print ('code name is: ',sys.argv[0])
 
 if len(sys.argv) > 1:
     filename=sys.argv[1]
 else:
     filename='tweets.json'
 
-print 'saving data to file: ',filename
+print ('saving data to file: ',filename)
 fhandle=open(filename,'w')
 
 
 if len(sys.argv) > 2:
     TweetKeyword=[sys.argv[i+2] for i in range(len(sys.argv)-2)]
 else:
-    TweetKeyword=['Africa','big data']
+    TweetKeyword=['France','Macron','Président']
 
 
-print 'TweetKeywords are: ',TweetKeyword
+print ('TweetKeywords are: ',TweetKeyword)
 
 
 #Variables that contains the user credentials to access Twitter API 
@@ -43,7 +43,7 @@ class StdOutListener(StreamListener):
         return True
 
     def on_error(self, status):
-        print status
+        print (status)
 
 
 if __name__ == '__main__':

@@ -1,15 +1,16 @@
-
+'''
 <<<<<<< HEAD
 %matplotlib inline
 =======
-#%matplotlib inline
+%matplotlib inline
 >>>>>>> upstream/master
+'''
 import numpy as np
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
 
-tweets_data_path = '../data/africa_ethiopia_tweets.txt'
+tweets_data_path = '../data/tweets.json'
 
 tweets_data = []
 tweets_file = open(tweets_data_path, "r")
@@ -22,14 +23,14 @@ for line in tweets_file:
         continue
         
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
 
 
-=======
-print 'before issuing exit'
-exit(0)
-print 'after issuing exit'
->>>>>>> upstream/master
+#=======
+print ('before issuing exit')
+#exit(0)
+print ('after issuing exit')
+#>>>>>>> upstream/master
 
 def get_tweet_text(tweet):
     #print tweet['text']
@@ -41,8 +42,8 @@ index = np.arange(len(tweets_data)) # array of numbers for the number of samples
 tweets = pd.DataFrame(columns=columns, index = index)
 
 #print tweets_data[0]
-print tweets_data[2].keys() #['text']
-print 'saved numbers of tweets: ', len(tweets_data)
+print (tweets_data[2].keys()) #['text']
+print ('saved numbers of tweets: ', len(tweets_data))
 
 
 
@@ -174,6 +175,6 @@ def created_at_seconds(created_at="Sun May 25 04:10:55 +0000 2014"):
     ts = datetime.fromtimestamp(time.mktime(tstamp))
     return unix_time(ts)
 
-print created_at_seconds()
+print (created_at_seconds())
 
 datetime.strftime('Sun May 25 04:10:55 +0000 2014', '%A %b %d %H:%M:%S %z %Y')
